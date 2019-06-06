@@ -1,4 +1,15 @@
          subroutine ccenter(p1,p2,p3,xc,yc,t1)
+!-----------------------------------------------------------
+! input ...
+! p1,p2,p3 - three points to fit a circle
+!if p1 and p2 are the edges of a cord the subroutine will compute the tangent angle as well
+! output ...
+! xc,yc - circle center coordinates
+!t1=tangent
+! comments ...
+! the D matrix can be used to compute the radius
+! during the calculation
+!===========================================================
                 implicit none
                                 Double precision :: p1(1,2),p2(1,2),p3(1,2)
                                 Double precision :: A(3,3),B(3,3),C(3,3),D(3,3)
