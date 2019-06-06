@@ -1,4 +1,14 @@
-    subroutine ellipse(P,counter,r1,c1,san,xx)
+!-----------------------------------------------------------
+! input ...
+! P(r1,c1) - ellipse data points 
+! san - number of points used to draw the fitted ellipse 
+! output ...
+! xx - coordinates of the fitted ellipse
+!===========================================================
+
+
+
+        subroutine ellipse(P,counter,r1,c1,san,xx)
             implicit none
             integer:: counter,i,j,r1,c1,k
             integer:: sh(2),sh2(2),shAT(2),san
